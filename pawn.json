@@ -5,7 +5,7 @@
     "output": "test.amx",
     "dependencies": [
         "Southclaws/samp-stdlib",
-        "pawn-lang/YSI-Includes"
+        "pawn-lang/YSI-Includes@5.x"
     ],
     "dev_dependencies": [
         "Southclaws/ut_mock_players"
