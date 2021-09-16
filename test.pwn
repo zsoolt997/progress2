@@ -1,4 +1,3 @@
-#include <crashdetect> // needs to be included before YSI
 
 #define RUN_TESTS
 #include <ut_mock_players>

@@ -10,9 +10,8 @@
 #define _progress2_included
 
 #include <a_samp>
-#include <logger>
-#include <YSI_Data\y_iterate>
 
+#include <YSI_Data\y_iterate>
 #include <YSI_Coding\y_hooks>
 
 
@@ -61,15 +60,14 @@ stock PlayerBar:CreatePlayerProgressBar(
 	colour = 0xFF1C1CFF, Float:max = 100.0, direction = BAR_DIRECTION_RIGHT
 ) {
 	if(!IsPlayerConnected(playerid)) {
-		Logger_Err("attempt to create player progress bar for invalid player",
-			Logger_I("playerid", playerid));
+		P:W("Attempt to create player progress bar for invalid playerid: %d", playerid);
 		return INVALID_PLAYER_BAR_ID;
 	}
 
 	new barid = Iter_Free(pbar_Index[playerid]);
 
 	if(barid == ITER_NONE) {
-		Logger_Err("MAX_PLAYER_BARS limit reached.");
+		P:W("MAX_PLAYER_BARS limit reached.", playerid);
 		return INVALID_PLAYER_BAR_ID;
 	}
 
