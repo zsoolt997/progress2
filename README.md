@@ -4,6 +4,8 @@ A SA:MP UI library for rendering progress bars used to visualise all manner of d
 
 Library originally written by Flávio Toribio, Now maintained by Southclaws in version 2+ with new features.
 
+Changes made by zsoolt997 (see releases or commits for changes).
+
 ![Bars 1](bars-horizontal.gif)
 
 ![Bars 2](bars-vertical.gif)
@@ -15,7 +17,7 @@ Library originally written by Flávio Toribio, Now maintained by Southclaws in v
 Simply install to your project:
 
 ```bash
-sampctl package install Southclaws/progress2
+sampctl package install zsoolt997/progress2
 ```
 
 Include in your code and begin using the library:
